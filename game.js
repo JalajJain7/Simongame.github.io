@@ -57,6 +57,13 @@ $(document).keypress(function (event) {
 });
 
 $(".btn").click(function(){
+    if(level==0) {
+        $("#level-title").text("level " + level);
+        nextSequence();
+        start = true;
+    }
+
+    else{
     var userChosenColour =$(this).attr("id");
     userClickedPattern.push(userChosenColour);
     playSound(userChosenColour);
@@ -64,6 +71,8 @@ $(".btn").click(function(){
     console.log(level);
     if(level>0)
         checkAnswer(userClickedPattern.length-1);
+
+    }
 });
 
 
