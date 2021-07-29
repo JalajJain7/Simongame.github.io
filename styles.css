@@ -5,8 +5,8 @@ body {
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
+  font-size: 2.5rem;
+  margin:  2%;
   color: #FEF2BF;
 }
 
@@ -18,8 +18,8 @@ body {
 }
 
 .btn {
-  /* text-align: center; */
-  /* vertical-align: middle; */
+  text-align: center;
+  vertical-align: middle;
   align-items: center; 
   color:rgb(0, 0, 0);
   font-size: 9rem;
@@ -27,7 +27,8 @@ body {
   display: inline-block;
   height: 200px;
   width: 200px;
-  padding-top: 1.5%;
+  padding-top: auto;
+  padding-bottom: auto;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -96,4 +97,104 @@ body {
   -moz-box-shadow:    3px 3px 5px 6px #ccc;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow:         3px 3px 5px 6px #ccc; */
+}
+
+
+
+/* _______________________MUTE___________________ */
+
+
+.toggle-sound {
+    position: fixed;
+    top: calc(6% - 25px);
+  left: calc(96% - 28px);
+  background-color: white;
+  width: 55px;
+  height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: black;
+  border-radius: 50%;
+  /* cursor: pointer; */
+  z-index: 99;
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  box-shadow: 0 0 0 0 white;
+}
+.toggle-sound.sound-mute {
+  box-shadow: none;
+}
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(255, 253, 253, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+.sound {
+  width: 97%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  margin-left: -15%;
+}
+.sound--icon {
+  
+  color: inherit;
+	line-height: inherit;
+	font-size: 1.6rem;
+	display: block;
+	margin: auto;
+	text-align: left;
+	/* padding-left: 20px; */
+}
+.sound--wave {
+  position: absolute;
+  border: 2px solid transparent;
+  border-right: 2px solid black;
+  border-radius: 50%;
+  transition: all 200ms;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.sound--wave_one {
+  width: 45%;
+  height: 40%;
+}
+.sound--wave_two {
+  width: 70%;
+  height: 62%;
+}
+.sound--wave_three {
+width: 95%;
+height:75%;
+}
+.sound-mute .sound--wave {
+border-radius: 0;
+width: 35%;
+height: 35%;
+border-width: 0 2px 0 0;
+left: 5px;
+}
+.sound-mute .sound--wave_one {
+  -webkit-transform: rotate(45deg) translate3d(0, -50%, 0);
+          transform: rotate(45deg) translate3d(0, -50%, 0);
+}
+.sound-mute .sound--wave_two {
+  -webkit-transform: rotate(-45deg) translate3d(0, 50%, 0);
+          transform: rotate(-45deg) translate3d(0, 50%, 0);
+}
+.sound-mute .sound--wave_three {
+    opacity: 0;
+    transform: translateX(-46%);
+    height: 20%;
+
+}
+
+/* RULES BUTTON */
+.button{
+  background-color:White;
 }
