@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Simon</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RULES SIMON GAME</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div lass="row">
+    
+    <div class="box">
 
-      <div type="button" id="green" class="btn green" text-align="center">
-      A
-      </div>
+    <div class="rules">RULES</div><br>
+    <ol class="rulesList">
+    <br><br><br><br>
+    <li>Press any button on the keyboard to start the game.</li>
+    <br>
+    <li>Simon will give the first signal. Repeat the signal by pressing the same color button or pressing the corresponding key from the keyboard.</li>
+    <br>
+    <li>Simon will give another signal. Repeat these two signals ( Last and new signal ) by pressing the same color button, in order.</li>
+    <br>
+    <li>Simon will add one more signal.</li>
+    <br>
+    <li>Continue playing as long as you can repeat each sequence of signals correctly.</li>
+    <br>
+    <li>If you fail to repeat a sequence exactly, Simon responds with a "RAZZ" sound. This means you've lost, and the sequence of signals ends.</li>
+    <br><br><br><br>
+    </ol>
+    <button onclick="window.location.href='index.html'">START GAME</button>
+     <!-- <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+       src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAElkr5UOHs&#x2F;view?embed">
+     </iframe> -->
+     <br><br><br>
+</div>
 
-      <div type="button" id="red" class="btn red">
-      S
-      </div>
-    </div>
 
-    <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-        N
-      </div>
-      <div type="button" id="blue" class="btn blue">
-        M
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div class="bottomText">MADE WITH ❤️ BY JALAJ</div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="game.js"></script>
 </body>
 
 </html>
+
